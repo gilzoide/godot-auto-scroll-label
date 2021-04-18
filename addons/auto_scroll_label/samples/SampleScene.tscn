@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/auto_scroll_label/auto_scroll_label.gd" type="Script" id=1]
+
+[node name="SampleScene" type="HSplitContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 128.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 128, 0 )
+
+[node name="Label" type="Control" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_clip_content = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text = "This is a really long text..."
+
+[node name="Control" type="Panel" parent="."]
+margin_left = 140.0
+margin_right = 1024.0
+margin_bottom = 600.0
