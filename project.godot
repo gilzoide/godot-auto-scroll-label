@@ -10,12 +10,12 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
-config/name="AutoScrollLabel"
+config/name="Auto Scroll Label"
+config/description="Label that animates the text scrolling when it does not fit in its rect."
 run/main_scene="res://addons/auto_scroll_label/samples/SampleScene.tscn"
 config/icon="res://icon.png"
 
